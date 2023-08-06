@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+#shadow-container {
+  /* background-color: rgba(0, 0, 0, 0.536); */
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.2903362028405112) 0%,
+    rgba(0, 0, 0, 1) 84%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 85vh;
+
+  width: 100%;
+}
+#main-container {
+  height: 85vh;
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 8px solid rgb(35, 35, 35);
+}
+header {
+  position: relative;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+header > div:nth-child(1) {
+  /* border: 2px solid red; */
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  padding-left: 150px;
+  align-items: center;
+}
+header > div:nth-child(2) {
+  /* border: 2px solid red; */
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  padding-right: 150px;
+  align-items: center;
+}
+#logo-container img {
+  height: 48px;
+  width: auto;
+}
+#lil-form {
+  display: flex;
+  align-items: center;
+}
+#lil-form select {
+  border: 2px solid white;
+  padding: 5px 15px;
+  margin-right: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#lil-form button {
+  background-color: #d81f26;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#middle-container {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+#middle-container h1,
+.bottom-container h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+#middle-container p,
+.bottom-container p {
+  font-size: 1.5rem;
+  margin: 15px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+#middle-container form input {
+  height: 40px;
+  width: 340px;
+  color: white;
+  border: 1px solid rgb(115, 115, 115);
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.27);
+  font-size: 16px;
+  outline: none;
+}
+#middle-container form button {
+  height: 50px;
+  width: 240px;
+  color: white;
+  background-color: #d81f26;
+  border: none;
+  padding: 5px 15px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.bottom-container {
+  border-bottom: 8px solid rgb(35, 35, 35);
+  height: 60vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-container img {
+  height: 325px;
+  width: auto;
+}
+.text-container {
+  /* padding: 0 100px; */
+  width: 40%;
+}
+#question-sec {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 8px solid rgb(35, 35, 35);
+}
+#question-sec h1 {
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 900;
+  margin: 15px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+#question-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.ques {
+  background-color: #2d2d2d;
+  display: flex;
+  padding: 25px 0;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.ques:hover {
+  background-color: #484848;
+}
+.ques > div:nth-child(1) {
+  width: 95%;
+}
+.ques > div:nth-child(2) {
+  width: 5%;
+}
+.ques p {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 1.7rem;
+  padding: 0 20px;
+}
+.plus {
+  /* font-weight: 500; */
+  font-size: 2rem;
+}
+#question-sec > p {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 1.4rem;
+  padding: 20px;
+  text-align: center;
+}
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+#form-container p {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+#form-container form input {
+  height: 40px;
+  width: 340px;
+  color: white;
+  border: 1px solid rgb(115, 115, 115);
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.27);
+  font-size: 16px;
+  outline: none;
+  margin-right: 15px;
+}
+#form-container form button {
+  height: 50px;
+  width: 240px;
+  color: white;
+  background-color: #d81f26;
+  border: none;
+  padding: 5px 15px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+/* **** accordion **** */
+
+.ac {
+  background-color: #2d2d2d;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  margin-bottom: 8px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 1.7rem;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.ac:hover {
+  background-color: #484848;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+  padding: 10px;
+  background-color: #2d2d2d;
+  display: none;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.ac span {
+  display: inline-block;
+  right: 0;
+  margin-left: 5px;
+  font-size: 30px;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 12%;
+}
